@@ -1,0 +1,6 @@
+{
+  "name": "Smart Hanout",
+  "description": "Plateforme marocaine de digitalisation des commerces de proximité (hanouts) : commande en ligne, livraison avec suivi GPS, gestion de stock, et carnet de crédit Karna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Centralized Moroccan Hanout Color System */
+    --wall: #FAF6ED;
+    --wall-dark: #EFE6D3;
+    --rust: #C55838;
+    --rust-hover: #B0492B;
+    --rust-light: #F7EAE5;
+    --amber-gold: #E0982E;
+    --amber-gold-light: #FBF2E3;
+    --moroccan-green: #1D7D63;
+    --moroccan-green-hover: #16644F;
+    --moroccan-green-light: #E4F3EE;
+    --shutter-blue: #1D5D8A;
+    --shutter-blue-hover: #16496D;
+    --shutter-blue-light: #E5F0F7;
+    --ink: #2A2118;
+    --ink-muted: #6B5E52;
+    --ink-light: #9B8D80;
+    
+    /* Authentic Grocer Textures & Surfaces */
+    --chalkboard: #1F2825;
+    --chalkboard-frame: #3E2F22;
+    --karna-paper: #FCF8EE;
+    --karna-line: #EADDC7;
+    --karna-stamp: #9E3824;
+    --card-surface: #FFFFFF;
+    --border-warm: #E4DAC6;
+  }
+
+  body {
+    background-color: var(--wall);
+    color: var(--ink);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Handwritten chalkboard & authentic Moroccan accents */
+.font-kalam {
+  font-family: 'Kalam', cursive, sans-serif;
+}
+
+/* Centralized semantic helper utilities bound exclusively to CSS variables */
+.bg-wall { background-color: var(--wall); }
+.bg-wall-dark { background-color: var(--wall-dark); }
+.bg-rust { background-color: var(--rust); }
+.bg-rust-hover:hover { background-color: var(--rust-hover); }
+.bg-rust-light { background-color: var(--rust-light); }
+.bg-amber-gold { background-color: var(--amber-gold); }
+.bg-amber-gold-light { background-color: var(--amber-gold-light); }
+.bg-moroccan-green { background-color: var(--moroccan-green); }
+.bg-moroccan-green-hover:hover { background-color: var(--moroccan-green-hover); }
+.bg-moroccan-green-light { background-color: var(--moroccan-green-light); }
+.bg-shutter-blue { background-color: var(--shutter-blue); }
+.bg-shutter-blue-hover:hover { background-color: var(--shutter-blue-hover); }
+.bg-shutter-blue-light { background-color: var(--shutter-blue-light); }
+.bg-chalkboard { background-color: var(--chalkboard); }
+.bg-karna-paper { background-color: var(--karna-paper); }
+
+.text-ink { color: var(--ink); }
+.text-ink-muted { color: var(--ink-muted); }
+.text-ink-light { color: var(--ink-light); }
+.text-rust { color: var(--rust); }
+.text-amber-gold { color: var(--amber-gold); }
+.text-moroccan-green { color: var(--moroccan-green); }
+.text-shutter-blue { color: var(--shutter-blue); }
+
+.border-rust { border-color: var(--rust); }
+.border-amber-gold { border-color: var(--amber-gold); }
+.border-moroccan-green { border-color: var(--moroccan-green); }
+.border-shutter-blue { border-color: var(--shutter-blue); }
+.border-wall-dark { border-color: var(--wall-dark); }
+.border-warm { border-color: var(--border-warm); }
+.border-karna { border-color: var(--karna-line); }
+
+.ring-rust:focus { --tw-ring-color: var(--rust); }
+.ring-moroccan-green:focus { --tw-ring-color: var(--moroccan-green); }
+
+/* Authentic subtle Moroccan star ribbon & chalkboard styling */
+.karna-ruled {
+  background-color: var(--karna-paper);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    var(--karna-line) 27px,
+    var(--karna-line) 28px
+  );
+}
+
+.chalkboard-shadow {
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(42, 33, 24, 0.15);
+}
+
+/* Subtle 8-point geometric star border ornament (discreet, authentic handcraft, zero tourist kitsch) */
+.star-ribbon {
+  background-image: radial-gradient(var(--rust) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
